@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThermoMetric - Smart Temperature Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">ThermoMetric</div>
+        <div class="tagline">AICTE Oasis Infobyte Internship Project</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Convert Temperature Instantly</h1>
+        <p class="hero-subtitle">Accurate. Simple. Reliable.</p>
+        <p class="hero-support">Supports Celsius, Fahrenheit & Kelvin</p>
+    </section>
+
+    <!-- Converter Card -->
+    <div class="container">
+        <div class="converter-card">
+            <!-- Input Field -->
+            <div class="input-group">
+                <label for="tempInput">Enter Temperature</label>
+                <input type="text" id="tempInput" placeholder="e.g., 32">
+            </div>
+
+            <!-- From Unit Selection -->
+            <div class="radio-group">
+                <label>From</label>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="fromC" name="fromUnit" value="celsius" checked>
+                        <label for="fromC">Celsius</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="fromF" name="fromUnit" value="fahrenheit">
+                        <label for="fromF">Fahrenheit</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="fromK" name="fromUnit" value="kelvin">
+                        <label for="fromK">Kelvin</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- To Unit Selection -->
+            <div class="radio-group">
+                <label>To</label>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="toC" name="toUnit" value="celsius">
+                        <label for="toC">Celsius</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="toF" name="toUnit" value="fahrenheit" checked>
+                        <label for="toF">Fahrenheit</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="toK" name="toUnit" value="kelvin">
+                        <label for="toK">Kelvin</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convert Button -->
+            <button class="convert-btn" onclick="convertTemp()">Convert</button>
+
+            <!-- Error Message -->
+            <div class="error-box" id="errorBox"></div>
+
+            <!-- Result Display -->
+            <div class="result-box" id="resultBox">
+                <div class="result-label">Converted Temperature</div>
+                <div class="result-value" id="resultValue">--</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Strip -->
+    <section class="info-strip">
+        <p>Designed with HTML • CSS • JavaScript<br>Responsive & Validated Inputs</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Created by <strong>Gayatri Hariprasad Charkupalli</strong><br>
+        AICTE Oasis Infobyte Internship
+    </footer>
+
+    <!-- Link JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
